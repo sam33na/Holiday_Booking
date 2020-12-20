@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#576EEA"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        android:textColor="@color/white"
+        android:text="Holiday Booking"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:textSize="22sp"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Destination"
+        android:textColor="@color/white" />
+    <Spinner
+        android:id="@+id/destination"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="12dp"
+        android:background="#C2D8EC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/checkin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Check-in Date"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#C2D8EC" />
+    <EditText
+        android:id="@+id/checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Select Check-out Date"
+        android:textSize="20sp"
+        android:background="#C2D8EC"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/adult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="No. of adults"
+        android:background="#C2D8EC"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No. of Children"
+        android:background="#C2D8EC"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Hotel"
+        android:textSize="20sp"
+        android:background="#51CABE"
+        android:padding="19dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>
