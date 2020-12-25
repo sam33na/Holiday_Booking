@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="#576EEA"
+    android:background="#ABB1D1"
     tools:context=".billActivity"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView

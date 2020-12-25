@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var adult:EditText
     private lateinit var child: EditText
     private lateinit var book: Button
-    private var date:String=""
+    private var date:String=" "
     private val places= arrayOf("Bali(5000 per day)", "Malaysia(300 per day)", "Singapore(6000 per day)")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,9 +32,11 @@ class MainActivity : AppCompatActivity() {
         spinner()
         checkin.setOnClickListener()
         {
-            datePick()
-            checkin
-            checkin.setText("$date").toString()
+            checkIn()
+        }
+        checkout.setOnClickListener()
+        {
+            checkOut()
         }
     }
     private fun spinner()
@@ -53,15 +55,34 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
-    private fun datePick()
+    private fun checkIn()
+    {
+        val c=Calendar.getInstance()
+        val year=c.get(Calendar.YEAR)
+        val month=c.get(Calendar.MONTH)
+        val day=c.get(Calendar.DAY_OF_MONTH)
+        var format:String
+        val datePickerDialog=DatePickerDialog(this,
+                DatePickerDialog.OnDateSetListener{
+                    view,Year,Month,dayOfMonth->
+                    checkin.setText("Check-In: $Year/${Month+ 1}/$dayOfMonth")
+                },
+                year,
+                month,
+                day
+        )
+        datePickerDialog.show()
+    }
+    private fun checkOut()
     {
         val c= Calendar.getInstance()
         val year=c.get(Calendar.YEAR)
         val month=c.get(Calendar.MONTH)
         val day=c.get(Calendar.DAY_OF_MONTH)
+        var format:String
         val datePickerDialog=DatePickerDialog(this, DatePickerDialog.OnDateSetListener
-        { view, year, month, dayOfMonth ->
-            date= "Selected date: $year/${month+1}/$day"
+        { view, Year, Month, dayOfMonth ->
+            checkout.setText("Check-out:$Year/${Month+1}/$dayOfMonth")
         },
         year,
         month,
