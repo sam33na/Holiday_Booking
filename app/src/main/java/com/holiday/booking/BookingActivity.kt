@@ -60,7 +60,6 @@ class MainActivity : AppCompatActivity() {
             it.putExtra("adult",adult.text.toString())
             it.putExtra("child",child.text.toString())
             it.putExtra("dateCalc",(outDate-inDate))
-            startActivity(it)
         }
         }
 
