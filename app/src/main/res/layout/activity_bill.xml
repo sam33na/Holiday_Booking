@@ -27,7 +27,7 @@
         <TextView
             android:textColor="@color/white"
             android:layout_marginTop="20dp"
-            android:text="Adult"
+            android:text="Adults : "
             android:textSize="25sp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:layout_marginTop="20dp"
-            android:text="Children"
+            android:text="Children : "
             android:textColor="@color/white"
             android:textSize="25sp"
             android:layout_columnWeight="1"
@@ -62,58 +62,85 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp" />
     </GridLayout>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="---------------------------------"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
     <GridLayout
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="1"
         android:orientation="vertical"
-        android:rowCount="1">
-    <TextView
-        android:text="Total Display"
+        android:columnCount="3"
+        android:rowCount="3">
+        <TextView
+        android:text="Total sum   : "
         android:textSize="30sp"
+        android:textColor="@color/white"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp" />
-    <TextView
+        <TextView
+        android:text="Tax amount  : "
+        android:textSize="30sp"
+            android:textColor="@color/white"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+        <TextView
+            android:text="Grand Total  : "
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <TextView
         android:id="@+id/totalDisplay"
-        android:text="Result"
+        android:text="-> Here"
         android:textSize="30sp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
+            android:layout_margin="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp" />
-    </GridLayout>
-    <TextView
-        android:text="Tax amount:"
-        android:textSize="30sp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp" />
-    <TextView
+
+        <TextView
         android:layout_margin="20dp"
         android:id="@+id/tax"
-        android:text="Tax"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:text="-> Here"
         android:textSize="30sp"
-        android:textAlignment="center"
-        android:layout_gravity="center_horizontal" />
-    <TextView
-        android:layout_margin="20dp"
-        android:id="@+id/grandTotal"
-        android:text="Grand Total"
-        android:layout_width="match_parent"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:layout_marginTop="20dp"
-        android:textAlignment="center"
-        android:layout_gravity="center_horizontal" />
+        android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_margin="20dp"
+            android:id="@+id/grandTotal"
+            android:text=" -> Here"
+            android:textSize="30sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"  />
+    </GridLayout>
+
 
 </LinearLayout>
