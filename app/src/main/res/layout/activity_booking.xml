@@ -71,17 +71,18 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:text="No. of adults"
+        android:inputType="number"
         android:background="#C2D8EC"
         android:textSize="20sp"
         android:layout_marginTop="20dp" />
 
     <EditText
-        android:id="@+id/child"
+        android:id="@+id/children"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No. of Children"
         android:textColor="#8288AE"
-        android:focusable="false"
+        android:inputType="number"
         android:background="#C2D8EC"
         android:layout_marginTop="20dp"
         android:padding="15dp"
