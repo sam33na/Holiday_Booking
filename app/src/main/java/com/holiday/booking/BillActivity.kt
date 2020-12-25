@@ -35,7 +35,7 @@ class BillActivity : AppCompatActivity() {
             val adultAmount = adultCalc(adult, totalDays, expenditure)
             val childrenAmount = childrenCalc(child, totalDays, expenditure)
 
-            val tax = ((adultAmount + childrenAmount) * 0.13)
+            val tax = (  (adultAmount + childrenAmount) * 0.13)
 
             val total = (adultAmount + childrenAmount + tax)
 

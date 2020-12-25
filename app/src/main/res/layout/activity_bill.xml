@@ -24,7 +24,7 @@
         android:columnCount="2"
         android:orientation="vertical"
         android:rowCount="2">
-<TextView
+        <TextView
             android:textColor="@color/white"
             android:layout_marginTop="20dp"
             android:text="Adult"
@@ -62,17 +62,39 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp" />
     </GridLayout>
-
-    <TextView
+    <GridLayout
         android:layout_margin="20dp"
-        android:id="@+id/totalDisplay"
-        android:text="Total Display"
-        android:textSize="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textAlignment="center"
-        android:layout_gravity="center_horizontal"/>
+        android:columnCount="1"
+        android:orientation="vertical"
+        android:rowCount="1">
+    <TextView
+        android:text="Total Display"
+        android:textSize="30sp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/totalDisplay"
+        android:text="Result"
+        android:textSize="30sp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+    </GridLayout>
+    <TextView
+        android:text="Tax amount:"
+        android:textSize="30sp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
     <TextView
         android:layout_margin="20dp"
         android:id="@+id/tax"
