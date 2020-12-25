@@ -2,7 +2,6 @@ package com.holiday.booking
 
 import android.app.DatePickerDialog
 import android.content.Intent
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -21,7 +20,8 @@ class MainActivity : AppCompatActivity() {
     private var inDate=0
     private var outDate = 0
     private var selectedItem = " "
-    private val places= mapOf( "Bali" to 5000 , "Malaysia" to 300, "Singapore" to 6000)
+    private val places= mapOf(
+            "Select Your Destination" to 0,"Bali" to 5000 , "Malaysia" to 300, "Singapore" to 6000)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_booking)
@@ -55,11 +55,12 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
-        book.setOnClickListener{Intent (this,billActivity::class.java).also {
+        book.setOnClickListener{Intent (this,BillActivity::class.java).also {
             it.putExtra("total",places[selectedItem])
             it.putExtra("adult",adult.text.toString())
             it.putExtra("child",child.text.toString())
             it.putExtra("dateCalc",(outDate-inDate))
+            startActivity(it)
         }
         }
 
@@ -81,8 +82,7 @@ class MainActivity : AppCompatActivity() {
                 year,
                 month,
                 day
-        )
-        datePickerDialog.show()
+        ).show()
     }
     private fun checkOut()
     {
@@ -98,8 +98,7 @@ class MainActivity : AppCompatActivity() {
         },
         year,
         month,
-        day)
-        datePickerDialog.show()
+        day).show()
     }
 }
 

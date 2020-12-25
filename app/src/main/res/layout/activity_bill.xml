@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="#ABB1D1"
-    tools:context=".billActivity"
+    tools:context=".BillActivity"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:textStyle="bold"
@@ -21,19 +21,10 @@
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="3"
+        android:columnCount="2"
         android:orientation="vertical"
-        android:rowCount="3">
-        <TextView
-            android:textColor="@color/white"
-            android:layout_marginTop="20dp"
-            android:text="Total"
-            android:textSize="25sp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
+        android:rowCount="2">
+<TextView
             android:textColor="@color/white"
             android:layout_marginTop="20dp"
             android:text="Adult"
@@ -51,16 +42,6 @@
             android:layout_rowWeight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/totalDisplay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Output"
-            android:textSize="25sp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginTop="20dp"/>
-
         <TextView
             android:id="@+id/adultEdit"
             android:layout_columnWeight="1"
@@ -84,8 +65,8 @@
 
     <TextView
         android:layout_margin="20dp"
-        android:id="@+id/total"
-        android:text="Total"
+        android:id="@+id/totalDisplay"
+        android:text="Total Display"
         android:textSize="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
