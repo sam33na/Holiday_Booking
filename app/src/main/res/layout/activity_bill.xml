@@ -67,7 +67,7 @@
         android:layout_margin="20dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="---------------------------------"
+        android:text="-------------------------------"
         android:textSize="40sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -141,6 +141,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"  />
     </GridLayout>
-
+    <TextView
+        android:text="All prices are in NPR currency."
+        android:textSize="25sp"
+        android:textColor="#E91E63"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" />
 
 </LinearLayout>
